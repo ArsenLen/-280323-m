@@ -1,0 +1,42 @@
+* {
+    margin: 0; /* внешний отступ */
+    padding: 0; /* внутренний отступ */
+}
+h1 {
+    margin-bottom: 20px;
+}
+p {
+    background-color: lightsteelblue;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    padding-bottom: 40px;
+}
+a {
+    background-color: lightsteelblue;
+    margin-right: 50px;
+}
+
+/* 
+    ДЗ. Скачать 8 картинок на одну тему в папку images
+        (.jpg, .png, .jpeg)
+
+    Задача. 
+        Сделать отступ между двумя тегами a
+
+    Есть стили, которые добавляются браузером автоматически,
+    мы их сбрасываем(отступы) с помощью обнуления
+
+    * - селектор для всех элементов на странице
+
+    margin-
+     1. top - сверху
+     2. right - справа
+     3. bottom - снизу
+     4. left - слева
+
+    padding-
+     1. top - сверху
+     2. right - справа
+     3. bottom - снизу
+     4. left - слева
+*/
