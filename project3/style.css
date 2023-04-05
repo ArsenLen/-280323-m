@@ -1,0 +1,44 @@
+ul {
+    list-style-type: "-";
+}
+.schedule {
+    list-style-type: upper-roman;
+}
+.schedule li { /* всем li, которые находятся внутри .schedule */
+    font-size: 28px;
+    text-decoration: underline;
+}
+.schedule li:nth-child(odd) {
+    color: green;
+}
+table, td, th {
+    border-collapse: collapse;
+    border: 1px solid black; /* граница */
+}
+td {
+    font-size: 24px;
+}
+th {
+    font-size: 28px;
+}
+/* 
+    border: 1px solid black;
+        1px - толщина границы
+        solid - тип границы (solid - одна линия, doubled - две линии)
+        black - цвет границы
+
+    nth-child(N) - N - порядковый номер дочернего
+    nth-child(odd) - odd - все нечетные 1,3,5
+    nth-child(even) - even - все четные 2,4
+
+    Задача. поменять размер шрифта элементов .schedule
+
+    по умолчанию маркер(list-style-type) ul - disc - закрашенный кружок
+
+    1. disc - закрашенный кружок
+    2. circle - полый кружок
+    3. decimal - арабские числа
+    4. square - квадрат
+    5. upper-roman - римские / lower-roman 
+    6. none - без маркера
+*/

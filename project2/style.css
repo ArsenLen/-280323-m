@@ -1,22 +1,41 @@
 * {
     margin: 0; /* внешний отступ */
     padding: 0; /* внутренний отступ */
+    box-sizing: border-box; /* модель блока, когда padding внутри элемента а не снаружи */
 }
-h1 {
-    margin-bottom: 20px;
+.item {
+    width: 700px; /* ширина */
+    height: 300px; /* высота */
+    background-color: cornflowerblue;
+    margin: 10px;
 }
-p {
-    background-color: lightsteelblue;
-    margin-bottom: 40px;
-    margin-left: 20px;
-    padding-bottom: 40px;
+.item-1 {
+    background-image: url("./images/img1.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
 }
-a {
-    background-color: lightsteelblue;
-    margin-right: 50px;
-}
-
 /* 
+    ДЗ. Создать 8 div и для каждого дива добавить фоновую картинку
+
+    background-size:
+        1. 100% блока 
+        2. cover - по ширине на 100%, по высоте масштабируется
+        3. contain - по высоте на 100%, по ширине масштабируется
+
+    ctrl+z / cmd + z - вернуть действие назад
+    .kvadrat - неправильно 
+    .square - правильно 
+
+    Селектор:
+        1. по тегу - h1, p, h3, img
+        2. по классу - .className
+    
+    Как задавать класс:
+        1. Использовать латиницу
+        2. Класс чувствителен к регистру. item-1 и Item-1 -- два разных класса
+        3. Класс должен быть осмысленными
+
+
     ДЗ. Скачать 8 картинок на одну тему в папку images
         (.jpg, .png, .jpeg)
 
