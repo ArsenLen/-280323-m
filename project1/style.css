@@ -1,6 +1,8 @@
 h1 {
     color: green; /* цвет шрифта */
     font-size: 40px;
+    text-align: center; /* выравнивание по центру */
+    background-color: indianred;
 }
 .post-1 {
     background-color: lightsteelblue; /* цвет фона, цвет блока */
@@ -18,6 +20,12 @@ img {
 }
 a {
     font-size: 24px;
+}
+p {
+    text-align: center; /* выравнивание текста */
+    background-color: coral;
+    width: 50%;
+    margin: 0 auto; /* центрирование блока */
 }
 /*
     селектор {

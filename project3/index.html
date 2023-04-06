@@ -8,17 +8,26 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div class="item-1">
+        <p>Hello</p>
+    </div>
+    <div class="item-2">
+        <p>Hello</p>
+    </div>
+
     <h1>Списки и таблицы</h1>
     <ul>
         <li>Mercedes</li>
         <li>BMW</li>
     </ul>
 
-    <ol>
-        <li>03.04.2023 - Введение в HTML и CSS</li>
-        <li>Создание блога</li>
-        <li>Работа со списками</li>
-    </ol>
+    <div class="themes-list">
+        <ol>
+            <li>03.04.2023 - Введение в HTML и CSS</li>
+            <li>Создание блога</li>
+            <li>Работа со списками</li>
+        </ol>
+    </div>
 
     <ol class="schedule">
         <li>Подъем</li>
@@ -29,21 +38,46 @@
     </ol>
 
     <table>
-        <tr>
-            <th>Номер</th>
-            <th>Страна производитель</th>
-            <th>Бренд</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Германия</td>
-            <td>Mercedes-Benz</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Япония</td>
-            <td>Toyota</td>
-        </tr>
+        <thead>
+            <tr>
+                <th>Номер</th>
+                <th>Страна производитель</th>
+                <th>Бренд</th>
+                <th>Цена</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Германия</td>
+                <td>Mercedes-Benz</td>
+                <td>20000$</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Япония</td>
+                <td>Toyota</td>
+                <td>15000$</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Япония</td>
+                <td>Lexus</td>
+                <td>17000$</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Германия</td>
+                <td>VW</td>
+                <td>16000$</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Итого</td>
+                <td>68000$</td>
+            </tr>
+        </tfoot>
     </table>
 
 </body>
@@ -54,6 +88,9 @@
     th - table-head - ячейки в главной или первой строкее
     tr - table-row - строка таблицы
     td - table-data - ячейка таблицы
+    thead - table-header - шапка таблица, оборачиваем в нее первую строку
+    colspan - атрибут, который позволяет объединить ячейки таблицы в одну, параметром указываем
+        сколько ячеек должна заменить текущая ячейка
 
     Задача. Создать список из ежедневных дел по порядку (5 элементов). 
         Маркером списка должны быть римские числа

@@ -1,3 +1,32 @@
+* {
+    margin: 0; /* внешний отступ */
+    padding: 0; /* внутренний отступ */
+    box-sizing: border-box; /* padding не добавляется к размеру блока, а находится внутри */
+}
+.item-1 {
+    width: 700px;
+    height: 50px;
+    background-color: crimson;
+}
+.item-2 {
+    width: 50%;
+    height: 50px;
+    background-color: cornflowerblue;
+    margin: 40px auto 0; /* 40px - сверху, auto - справа/слева, 0 - отступ снизу */
+}
+p {
+    width: 50%;
+    background-color: seagreen;
+    margin: 0 auto; /* 0 - сверху и снизу, auto - справа и слева */
+    text-align: center; /* центрирование текста */
+}
+.item-2 p {
+
+}
+/* Таблицы и списки */
+.themes-list {
+    padding: 0 20px;
+}
 ul {
     list-style-type: "-";
 }
@@ -21,7 +50,21 @@ td {
 th {
     font-size: 28px;
 }
+tbody tr:nth-child(odd) {
+    background-color: khaki;
+}
 /* 
+    Задача. оцентрировать зеленый блок с текстом hello    
+
+    1. 4 значения -  сверху, справа, снизу, слева. ||  margin: 10px 20px 10px 50px;
+    2. 3 значения - сверху, справа-слева, снизу.|| margin: 10px 40px 20px;
+    3. 2 значения - сверху-снизу, справа-слева. || margin: 10px 40px;
+    4. 1 значение - со всех сторон. || margin: 10px; 
+
+    % - это процент от ширины родительского блока
+    ширина body равнозначна ширине всего экрана
+        50% от body - 50% от ширины экрана
+
     border: 1px solid black;
         1px - толщина границы
         solid - тип границы (solid - одна линия, doubled - две линии)
@@ -41,4 +84,9 @@ th {
     4. square - квадрат
     5. upper-roman - римские / lower-roman 
     6. none - без маркера
+
+
+    p, div, h1-h6 - блочные теги и по умолчанию занимают 100% ширины родительского блока
+
+    a, table - строчные теги 
 */
