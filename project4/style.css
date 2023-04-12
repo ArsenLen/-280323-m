@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* рассчет padding внутри блока, а не снаружи */
+}
+header {
+    background-color: #1ABC9C;
+}
+.wrapper {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 
+background: rgba(26, 188, 156, 1) url("./") no-repeat cover;
+
+    ctrl+C - копировать
+    ctrl+V - вставить
+
+    https://flexboxfroggy.com/#ru пройти все уровни
+
+    flex - технология для создания гибких блоков на странице,
+        испольузется для позицинирования элементов на странице
+    Элементы в одну строку можно расположить различными способами,
+        но самый удобный и современный - это flex.
+    Вместе с flex используются различные способы позиционирования
+        по горизонтали и вертикали
+*/

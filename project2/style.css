@@ -3,18 +3,66 @@
     padding: 0; /* внутренний отступ */
     box-sizing: border-box; /* модель блока, когда padding внутри элемента а не снаружи */
 }
+body {
+    font-family: 'Inter', sans-serif;
+}
+header {
+    height: 70px;
+    background-color: lightgreen;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center; /* центрирование блоков внутри header по вертикали */
+    justify-content: center; /* центрирование блоков внутри header по горизонтали */
+}
+h1 {
+    text-align: center;
+}
+h1:hover {
+    color: khaki;
+    font-size: 50px;    
+}
+.container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
 .item {
-    width: 700px; /* ширина */
-    height: 300px; /* высота */
+    width: calc(50% - 20px); /* ширина */ /*  || + - * / || */
+    height: calc(100vh / 2.5); /* высота */ /* 33vh - высота рабочего окна браузера */
     background-color: cornflowerblue;
     margin: 10px;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    transition: 1s; /* transition - управляет временем любой анимации */
+    border-radius: 8px; /* закругление углов блока */
+}
+.item:hover {
+    transform: scale(1.1); /* scale() - функция, которая позволяет увеличить размеры блока пропорционально */
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5); /* тень блока */
 }
 .item-1 {
     background-image: url("./images/img1.jpg");
-    background-size: cover; 
-    background-repeat: no-repeat;
+}
+.item-2 {
+    background-image: url("./images/img2.jpg");
 }
 /* 
+    Псевдоклассы - особое состояние элемента
+    :nth-child()
+    :hover - состояние элемента при наведении мыши на него  
+
+    Единицы измерения ширины/высоты:
+        1. px - пиксели
+        2. % - процент относительно родительского элемента
+        3. vw - view width - полная ширина окна браузера(с учетом скролла)
+            100vw - ширина окна браузера
+           vh - view height - полная высота рабочего окна браузера 
+           
+
+    display: flex по умолчанию располагает все элементы в одну строку, игнорируя их ширину
+    flex-wrap: wrap; ширина элемента не игнорируется, правило размещения в одну строку игнорируется
+
     ДЗ. Создать 8 div и для каждого дива добавить фоновую картинку
 
     background-size:

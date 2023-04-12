@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section>
+        <h1>Хотите веб-сайт?</h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi accusamus dolorum ea excepturi laboriosam aut.
+            Minus, id. Unde, suscipit et. </p>
+        <form>
+            <div class="form-control">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="email" placeholder="Ваш email">
+            </div>
+            <textarea cols="30" rows="10" placeholder="Сообщение"></textarea>
+            <input type="submit" value="ОТПРАВИТЬ">
+        </form>
+    </section>
+</body>
+</html>
+
+<!-- 
+    placeholder - подсказка для пользователя
+    required - поле обязательно к заполнению
+
+    input, textarea, select - строчные теги, располагаются в одну строку
+        display: block; - разместим в колонку
+        display: flex; flex-direction: column;
+
+    Элементы формы:
+        input:
+            1. text - текстовое поле ввода
+            2. number - для ввода чисел
+            3. email - для ввода email (требуется ввод @ )
+            4. submit - кнопка для отправки формы
+            5. password - пароль, символы кодируются в точки
+            6. date - выбор даты с календарем
+            7. color - выбор цвета
+            8. file - выбор файла
+            9. tel - ввод телефона 
+            10. checkbox - блок с галочкой, выбор нескольких пунктов
+            11. radio - переключатель, выбор одного из предлагаемых пунктов
+        
+        textarea - для длинного текста, сообщение,отзыв
+        select>option - выпадающий список с выбором опций
+
+    form - тег формы
+
+    <form action="form.php">
+        Отправить
+    </form>
+ -->
