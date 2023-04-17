@@ -18,3 +18,54 @@ p {
     width: 30%;
     margin: 50px auto 65px; /* 50px - сверху, auto - справа/слева, 65px - снизу */
 }
+form {
+    width: 30%;
+    margin: auto;
+    /* background-color: crimson; */
+    /* background-color: white; */
+    /* padding: 20px; */
+}
+.form-control {
+    display: flex;
+    gap: 30px; /* отступ между элементами внутри flex */
+    margin-bottom: 20px;
+}
+input[type="text"], input[type="email"] {
+    width: 50%;
+    padding: 20px;
+    border: none; /* убираем границы у блока */
+    outline: none; /* убираем границы, которые появляются при нажатии на элемент */
+    font-size: 14px;
+    caret-color: #34547A; /* цвет курсора */
+}
+/* input[type="text"] {
+    margin-right: 30px;
+} */
+input[type="text"]:focus {
+    border: 1px solid #34547A; /* толщина тип цвет */
+}
+textarea {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+input[type="submit"] {
+    display: block; /* делаем элемент блочным */
+    margin: 50px auto 0; /* сверху, справа/слева, снизу */
+    padding: 20px 40px; /* 20px - сверху/снизу, 40px - справа/слева */
+    border: none;
+    outline: none;
+    background-color: #34547A;
+    color: white;
+    letter-spacing: 0.15em;
+}
+/* 
+    :hover - при наведении 
+    :focus - при выборе инпута, чтобы ввести в него текст
+
+    .form-control input {} - обращение к input внутри элемента с классом .form-control
+
+    input строчный элемент
+*/

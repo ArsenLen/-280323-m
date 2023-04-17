@@ -3,17 +3,74 @@
     padding: 0;
     box-sizing: border-box; /* рассчет padding внутри блока, а не снаружи */
 }
+body {
+    font-family: 'Inter', sans-serif;
+}
 header {
     background-color: #1ABC9C;
 }
 .wrapper {
     width: 90%;
+    height: 70px;
     margin: auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-
+.nav-link {
+    font-size: 25px;
+    color: black;
+    text-decoration: none; /* убирает нижнее подчеркивание */
+}
+.nav-link:not(:last-child) {
+    margin-right: 20px;
+}
+.social-icon:not(:last-child) {
+    margin-right: 20px;
+}
+/* О нас */
+.intro {
+    display: flex;
+    align-items: center;
+}
+.intro-img {
+    width: 50%;
+}
+h1 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.intro-text {
+    font-size: 20px;
+    width: 90%;
+    margin: auto;
+    text-align: justify; /* выравнивание по ширине */
+    /* padding: 0 65px; */
+}
+/* Проекты */
+.projects {
+    background-color: #DCFFEB;
+    padding: 125px 0;
+}
+.projects-wrapper {
+    width: 90%;
+    margin: auto;
+}
 /* 
+    aspect-ratio: 1/1;
+
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+*/
+/* 
+
+
+    :not() - отрицание
+    div:last-child - последний элемент
+    a:first-child - первый элемент
+
 background: rgba(26, 188, 156, 1) url("./") no-repeat cover;
 
     ctrl+C - копировать
