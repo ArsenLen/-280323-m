@@ -57,7 +57,125 @@ h1 {
     width: 90%;
     margin: auto;
 }
+.projects-title {
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+.projects-list {
+    display: flex;
+    gap: 35px; /* новое свойство работает не во всех браузерах */
+}
 /* 
+    .projects-item {
+        width: 33%
+    }
+.projects-item:not(:last-child) {
+    margin-right: 35px;
+} */
+.projects-item img { 
+    width: 100%;
+}
+.projects-item {
+    position: relative;
+}
+.projects-item:hover .projects-item-hover {
+    display: block;
+}
+.projects-item-hover {
+    display: none; /* скрыть элемент */
+    position: absolute;
+    bottom: 0;
+    padding: 15px 35px;
+    background-color: rgba(0, 0, 0, 0.38);
+}
+.projects-item-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+.projects-item-text {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+/* Футер */
+footer {
+    padding: 80px 0;
+}
+.footer-wrapper {
+    width: 90%;
+    margin: auto;
+}
+.footer-title {
+    font-size: 35px;
+    margin-bottom: 55px;
+}
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-item img {
+    display: block;
+    margin: auto;
+    /* opacity: 0;
+    background-color: transparent; */
+}
+.footer-item-title {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    color: #999999;
+    margin: 25px 0;
+}
+.footer-item-text {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+/* 
+    space-between - размещает блоки на равноудаленное расстояние друг между другом
+
+    Расположить элементы справа налево в одну строку 
+    и добавить отступ между ними
+ */
+
+
+
+/* 
+    <div class="item">
+        <p>Этот меняется</p>
+        <div>
+            Отображается при hover на .item
+        </div>
+    </div>
+    <p>Этот не меняется<p>
+
+    .item:hover div {
+        
+    }      
+
+    <h1>Hello</h1>
+    h1:hover {
+        color: red; 
+    }
+    красный цвет появлялся при наведнии на элемент
+
+
+    :hover - состояние элемента при наведении
+
+    background: url(./img1.jpg) white cover center; фон, и картинка и размер фона и цвет
+    background-color: white; только цвет
+
+    Разместить текст внизу картинки
+
+
+    position: relative - задается родительским элементам, относительно которых позиционируем блок
+
+    divParent - 400px
+    img - width -100%
+
     aspect-ratio: 1/1;
 
     font-family: 'Inter', sans-serif;
