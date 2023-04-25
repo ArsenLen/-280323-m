@@ -120,6 +120,19 @@ if(number1 > number2) {
     console.log("Равны")
 }
 
+function Fn() {
+    let result = ""
+    if(number1 > number2) {
+        result = "Первое больше"
+    } else if(number2 > number1) {
+        result = "Второе больше"
+    } else {
+        result = "равны"
+    }
+    console.log(result)
+}
+Fn()
+
 /*
     const result = num>50 ?  : num == 50 ? "Равно" : "Меньше"
     if(statement) {
