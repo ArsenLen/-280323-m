@@ -149,6 +149,8 @@ const img = document.querySelector("img")
 const src = img.getAttribute("src")
 console.log(src)
 
+// ctrl + c
+
 // Задача. Получить атрибут src всех картинок, используя цикл for
 const images = document.querySelectorAll("img") // [img, img]
 for(let i = 0; i < images.length; i++) {
