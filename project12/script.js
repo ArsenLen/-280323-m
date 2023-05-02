@@ -58,6 +58,11 @@ for(let i = 0; i < numbers.length; i++) {
 
 
 /*
+    "Arsen" == "Arsen"
+
+    "Arsen" > "Ars" - TRUE
+    "Arsen".length > "Ars".length - TRUE
+
     numbers[i] > 50
 
     number % 2 == 0
@@ -102,3 +107,12 @@ for(let i = 0; i < numbers.length; i++) {
 
     0 - 1 - 2 - 3 - 4
 */
+
+
+// power(10, 3) // 10*10*10 => 10 ^ 3 // 1000
+
+
+const btn = document.querySelector(".btn")
+btn.addEventListener("click", function() {
+    console.log('hello')
+})
