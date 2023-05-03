@@ -121,6 +121,14 @@ for(let i = 0; i < products.length; i++) {
                     `
 }
 
+// Создать h2, в котором нужно посчитать цену всех продуктов и вывести ее после всех продуктов
+// посчитать сумму используя цикл for
+let sum = 0
+for(let i = 0; i < products.length; i++) {
+    sum += products[i].price
+}
+main.innerHTML += `<h2>Сумма всех товаров: ${sum}</h2>`
+
 /*
     `<div class="product">
         <h5>Iphone 14</h5>

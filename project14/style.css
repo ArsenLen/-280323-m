@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.btn {
+    width: 300px;
+    background-color: seagreen;
+    padding: 15px;
+    font-size: 28px;
+    color: white;
+    border: none;
+    outline: none; /* убрать border при клике */
+    margin: 10px;
+    border-radius: 8px;
+}
+.btn:hover {
+    background-color: rgb(22, 118, 64);
+}
