@@ -17,7 +17,7 @@
 // main.innerHTML = main.innerHTML + `<section></section>`
 
 // Добавить тег p с текстом "Hello" в main. 
-const main = document.querySelector("main")
+// const main = document.querySelector("main")
 
 // Добавить 100 тегов p с текстом "Hello" в main. цикл for.
 // for(let i = 0; i < 100; i++) {
@@ -93,41 +93,41 @@ const main = document.querySelector("main")
 
 
 // Есть массив products. Для каждого продукта отобразить разметку
-const products = [
-    {
-        name: "Iphone 14",
-        price: 70000
-    },
-    {
-        name: "Iphone 13",
-        price: 60000
-    },
-    {
-        name: "Samsung S30",
-        price: 65000
-    }
-]
+// const products = [
+//     {
+//         name: "Iphone 14",
+//         price: 70000
+//     },
+//     {
+//         name: "Iphone 13",
+//         price: 60000
+//     },
+//     {
+//         name: "Samsung S30",
+//         price: 65000
+//     }
+// ]
 // main.innerHTML += `<div class="product">
 //                         <h5>${products[0].name}</h5>
 //                         <p>${products[0].price}</p>
 //                     </div>`
 
-for(let i = 0; i < products.length; i++) {
-    main.innerHTML += `
-                    <div class="product">
-                        <h5>${products[i].name}</h5>
-                        <p>${products[i].price}</p>
-                    </div>
-                    `
-}
+// for(let i = 0; i < products.length; i++) {
+//     main.innerHTML += `
+//                     <div class="product">
+//                         <h5>${products[i].name}</h5>
+//                         <p>${products[i].price}</p>
+//                     </div>
+//                     `
+// }
 
 // Создать h2, в котором нужно посчитать цену всех продуктов и вывести ее после всех продуктов
 // посчитать сумму используя цикл for
-let sum = 0
-for(let i = 0; i < products.length; i++) {
-    sum += products[i].price
-}
-main.innerHTML += `<h2>Сумма всех товаров: ${sum}</h2>`
+// let sum = 0
+// for(let i = 0; i < products.length; i++) {
+//     sum += products[i].price
+// }
+// main.innerHTML += `<h2>Сумма всех товаров: ${sum}</h2>`
 
 /*
     `<div class="product">
@@ -164,3 +164,127 @@ main.innerHTML += `<h2>Сумма всех товаров: ${sum}</h2>`
     3. Поиск элемента, куда хотим поместить тег
     4. Добавление созданного тега в найденные элемент. appendChild()
 */
+
+
+// Задача. Есть массив users. Для каждого пользователя отобразить разметку внутри section. 
+const users = [
+    {
+        email: "test@gmail.com",
+        login: "Test"
+    },
+    {
+        email: "starta@gmail.com",
+        login: "Starta University"
+    },
+    {
+        email: "admin@gmail.com",
+        login: "Admin"
+    },
+]
+
+const usersContainer = document.querySelector(".users-container")
+
+for(let i = 0; i < users.length; i++) {
+    usersContainer.innerHTML += `
+        <div class="user">
+            <h5>${users[i].email}</h5>
+            <p>${users[i].login}</p>
+        </div>
+    `
+}
+// Переписать код написанный с помощью for на forEach()
+
+
+/*
+    <div class="user">
+        <h5>Email</h5>
+        <p>Login</p>
+    </div>
+
+    innerHTML = `<h1>Hello</h1>`
+    for()
+*/
+
+
+// Задача. Есть массив posts. Для каждого поста из массива отобразить разметку в posts-container
+
+const posts = [
+    {
+        title: "My first title",
+        descr: "My descr",
+        author: "Test"
+    },
+    {
+        title: "My second title",
+        descr: "My second descr",
+        author: "Admin"
+    },
+    {
+        title: "My third title",
+        descr: "My third descr",
+        author: "Starta University"
+    },
+]
+
+const postsContainer = document.querySelector(".posts-container")
+
+// for(let i = 0; i < posts.length; i++) {
+//     // console.log(posts[i])
+//     postsContainer.innerHTML += `
+//         <div class="post">
+//             <h6> ${posts[i].title} </h6>
+//             <p> ${posts[i].author} </p>
+//             <p> ${posts[i].descr} </p>
+//         </div>
+//     `
+// }
+
+posts.forEach(function(post) {
+    postsContainer.innerHTML += `
+        <div class="post">
+            <h6> ${post.title} </h6>
+            <p> ${post.author} </p>
+            <p> ${post.descr} </p>
+        </div>
+    `
+})
+
+/*
+    array.forEach(callback) - выполняет функцию для каждого элемента массив
+
+    callback принимает несколько параметров
+        1. текущий элемент, каждый элемент
+        2. индекс
+        3. массив  
+
+    <div class="post">
+        <h6> Title </h6>
+        <p> Author </p>
+        <p> Descr </p>
+    </div>
+*/
+
+// Задача. Есть массив чисел. Отобразить каждый элемент массива в консоли с помощью forEach
+const numbers = [10, 30, 25, 60, 13]
+
+numbers.forEach(function(number) {
+    console.log(number)
+})
+
+/*
+    1. number = 10. console.log(10)
+    2. number = 30. console.log(30)
+    3. number = 25. console.log(25)
+    4. number = 60. console.log(60)
+    5. number = 13. console.log(13)
+*/
+
+// Задача. Есть массив имен. Отобразить каждое имя в консоли с добавлением строки "привет"
+const names = ["Arsen", "Anastasia", "Lera", "Natalia"]
+
+names.forEach(function(name) {
+    console.log(`привет, ${name}`)
+})
+
+// "Привет, Arsen" // Привет, Anastasia
+
