@@ -61,17 +61,27 @@ const buttons = document.querySelectorAll("button") // [button, button, button, 
 for(let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener("click", function(event) {
         if(event.target.id == "img") {
-            body.style.backgroundImage = "url(./img8.jpg)"
+            body.style.background = "url(./img8.jpg)"
         } else {
+            // body.style.backgroundImage = "none"
             const color = event.target.id
-            body.style.backgroundColor = color
+            body.style.background = color
         }
     })
 }
 
+/*
+    Переписать используя метод .forEach()
+
+    array.forEach(function(item) {
+        console.log(item)
+    })
+    item - каждый элемент массива
+*/
+
 // Задача. Если после картинки нажимаем на цвет, то цвет не меняется. Сделать так, чтобы после
 // нажатия на картинку можно было поменять и цвет
-
+// background: blue 
 
 // При нажатии на кнопку red, поменять цвет фона body на красный.
 // const redButton = document.querySelector("#red")
