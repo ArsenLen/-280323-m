@@ -1,0 +1,23 @@
+.item-1 {
+    background-color: khaki;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.todo {
+    width: 40%;
+    padding: 15px;
+    background-color: #d0d0d0;
+    border-radius: 8px;
+    margin: 10px;
+}
+h3 {
+    font-size: 24px;
+    text-align: center;
+}
+.done {
+    background-color: green;
+    color: white;
+}
