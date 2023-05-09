@@ -144,6 +144,11 @@ btn.addEventListener("click", function() {
 })
 
 /*
+    ["Arsen", ""]
+    2+1 = array[3]
+*/
+
+/*
     .classList - позволяет добавить, удалить, переключить класс у элемента
         element.classList.add("className") - добавить
         element.classList.remove("className") - удалить

@@ -21,3 +21,11 @@ h3 {
     background-color: green;
     color: white;
 }
+h1 {
+    font-size: 60px;
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+}
